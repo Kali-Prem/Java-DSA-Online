@@ -1,20 +1,17 @@
+// Question:- Find a key in the given numbers[] array using linear search and return the index of key if found otherwise return -1.
+
 public class Main {
     public static void main(String[] args) {
         int numbers[] = {2, 4, 6, 8, 10, 12, 14, 16};
-        int key = 10;
-
+        int key = 2;
+        linearSearch(numbers, key);
         int index = linearSearch(numbers, key);
-        // System.out.println(index);
         if(index == -1){
-            System.out.println("NOT found");
+            System.out.print("Key Not Found");
         }
         else{
-            System.out.println("Key found at index = " + index);
+            System.out.print("Key found at =" + index);
         }
-
-
-        
-
     }
     public static int linearSearch(int numbers[], int key){
         for(int i = 0; i < numbers.length; i++){
@@ -22,7 +19,6 @@ public class Main {
                 return i;
             }
         }
-        return -1; 
-
+        return -1;
     }
 }
