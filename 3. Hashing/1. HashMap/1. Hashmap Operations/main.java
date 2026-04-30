@@ -56,4 +56,4 @@ public class main{
         hm.clear(); //Clear the map means remove all the data of map
         System.out.println(hm);
     }
-}
+} 
