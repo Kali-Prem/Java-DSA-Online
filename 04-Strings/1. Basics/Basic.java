@@ -133,6 +133,27 @@ public class Basic {
         }
         System.out.println(ch8);
 
+        // str7.substring(starting index, last index):-- using functions
+        System.out.println(str7.substring(0, n7));
+
+
+
+
+        //=========== Questions:- Print Largest String==========
+
+        // str1.compareTo(str2) -> Compare the string using alphabetically (called Lexicographically). [If compareTo function gives output like == 0, > 0, < 0  ->IF gives equal to zero means both are equal, if greater than zero means str1 > str2, if less than zero means str1 <  str2]
+
+        String str8[] = {"kali", "linux", "Hacker"};
+        String largest = str8[0];
+        for(int i = 0; i<str8.length; i++){
+            if(largest.compareTo(str8[i]) < 0){
+                largest = str8[i];
+            } 
+        }
+        System.out.println(largest);
+        // T.C = O(x*N) -> let suppose x the total number of alphabet and compareTo goes at each letter so x*N
+
+
 
 
 
